@@ -155,7 +155,7 @@ export default function VocaflipPage() {
 
                     <div className="mt-8 space-y-10">
                         <div>
-                            <h3 className="text-sm font-semibold text-foreground">English</h3>
+                            <h3 className="text-sm font-semibold text-foreground">영단어</h3>
                             {/* Mobile: carousel (one image at a time), Desktop: grid */}
                             <div className="mt-4 md:hidden">
                                 <Carousel className="w-full">
@@ -166,14 +166,13 @@ export default function VocaflipPage() {
                                             { src: "/vocaflip/ss_eng_3.jpg", alt: "Vocaflip screenshot (English) 3" },
                                         ].map((item) => (
                                             <CarouselItem key={item.src}>
-                                                <div className="overflow-hidden rounded-xl border border-border bg-card">
+                                                <div className="w-[280px] h-[400px] relative mx-auto">
                                                     <AspectRatio ratio={9 / 16}>
                                                         <Image
                                                             src={item.src}
                                                             alt={item.alt}
                                                             fill
-                                                            className="object-cover"
-                                                            sizes="100vw"
+                                                            className="object-contain rounded-lg"
                                                         />
                                                     </AspectRatio>
                                                 </div>
@@ -210,7 +209,7 @@ export default function VocaflipPage() {
                         </div>
 
                         <div>
-                            <h3 className="text-sm font-semibold text-foreground">Korean</h3>
+                            <h3 className="text-sm font-semibold text-foreground">한자</h3>
                             {/* Mobile: carousel (one image at a time), Desktop: grid */}
                             <div className="mt-4 md:hidden">
                                 <Carousel className="w-full">
@@ -222,14 +221,13 @@ export default function VocaflipPage() {
                                             { src: "/vocaflip/ss_han3.jpg", alt: "Vocaflip screenshot (Korean) 3" },
                                         ].map((item) => (
                                             <CarouselItem key={item.src}>
-                                                <div className="overflow-hidden rounded-xl border border-border bg-card">
+                                                <div className="w-[280px] h-[400px] relative mx-auto">
                                                     <AspectRatio ratio={9 / 16}>
                                                         <Image
                                                             src={item.src}
                                                             alt={item.alt}
                                                             fill
-                                                            className="object-cover"
-                                                            sizes="100vw"
+                                                            className="object-contain rounded-lg"
                                                         />
                                                     </AspectRatio>
                                                 </div>
