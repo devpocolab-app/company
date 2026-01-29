@@ -16,6 +16,24 @@ import {
 export const metadata: Metadata = {
     title: "vocaflip | pocolab",
     description: "단어 암기를 이해 중심 학습으로 바꾸기 위한 오프라인 단어 학습 앱 Vocaflip 케이스 스터디.",
+    openGraph: {
+        title: "vocaflip | pocolab",
+        description: "단어 암기를 이해 중심 학습으로 바꾸기 위한 오프라인 단어 학습 앱 vocaflip 케이스 스터디.",
+        images: [
+            {
+                url: "/vocaflip/opengraph-image",
+                width: 1200,
+                height: 630,
+                alt: "vocaflip",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "vocaflip | pocolab",
+        description: "단어 암기를 이해 중심 학습으로 바꾸기 위한 오프라인 단어 학습 앱 vocaflip 케이스 스터디.",
+        images: ["/vocaflip/opengraph-image"],
+    },
 }
 
 export default function VocaflipPage() {

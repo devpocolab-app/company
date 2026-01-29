@@ -11,6 +11,32 @@ export const metadata: Metadata = {
   title: 'pocolab | Small but useful apps',
   description: 'A product studio building small but useful apps. We create practical solutions that make everyday life a little easier.',
   generator: 'v0.app',
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
+  ),
+  openGraph: {
+    type: 'website',
+    siteName: 'pocolab',
+    title: 'pocolab | Small but useful apps',
+    description:
+      'A product studio building small but useful apps. We create practical solutions that make everyday life a little easier.',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'pocolab',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'pocolab | Small but useful apps',
+    description:
+      'A product studio building small but useful apps. We create practical solutions that make everyday life a little easier.',
+    images: ['/opengraph-image'],
+  },
   icons: {
     icon: [
       {
