@@ -13,7 +13,7 @@ const products = [
     href: "/vocaflip",
   },
   {
-    name: "drinko",
+    name: "aquatap",
     description: "Track your daily water intake with simple and intuitive logging. Stay hydrated and build healthy habits.",
     platform: "Android",
     icon: Droplets,
