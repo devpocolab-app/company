@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Drinko 개인정보처리방침 | pocolab",
-    description: "Drinko 앱 개인정보처리방침",
+    title: "AquaTap 개인정보처리방침 | pocolab",
+    description: "AquaTap 앱 개인정보처리방침",
 }
 
-export default function DrinkoPrivacyPage() {
+export default function AquaTapPrivacyPage() {
     return (
         <main className="min-h-screen bg-background">
             <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
@@ -20,7 +20,7 @@ export default function DrinkoPrivacyPage() {
                 <section className="space-y-10 text-base leading-relaxed text-foreground">
                     <div>
                         <p className="text-muted-foreground">
-                            Drinko(이하 &quot;앱&quot;)는 사용자의 수분 섭취 습관 형성을 돕기 위해 서비스 제공에 필요한 최소한의 데이터를 사용합니다.
+                            AquaTap(이하 &quot;앱&quot;)은 사용자의 수분 섭취 습관 형성을 돕기 위해 서비스 제공에 필요한 최소한의 데이터를 사용합니다.
                             <br />
                             본 앱은 별도의 서버를 운영하지 않으며, 모든 데이터는 사용자의 휴대폰 내부 저장소(Local Storage)에만 저장됩니다. 따라서 사용자의 데이터는 외부로 전송되거나 개발자에게 수집되지 않습니다.
                         </p>
