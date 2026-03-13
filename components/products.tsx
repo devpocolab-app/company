@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { BookOpen, Droplets, MessageSquare } from "lucide-react"
+import { BookOpen, Droplets, Heart, MessageSquare } from "lucide-react"
 
 const products = [
   {
@@ -25,6 +25,13 @@ const products = [
     platform: "Web",
     icon: MessageSquare,
     status: "Available",
+  },
+  {
+    name: "eardream",
+    description: "A smart companion app connecting elderly parents and their guardians. Stay reassured with real-time location sharing, daily activity tracking, and comforting memory slideshows.",
+    platform: "Android / iOS",
+    icon: Heart,
+    status: "Coming Soon",
   },
 ]
 
