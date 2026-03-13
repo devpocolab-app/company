@@ -32,6 +32,7 @@ const products = [
     platform: "Android / iOS",
     icon: Heart,
     status: "Coming Soon",
+    href: "/eardream",
   },
 ]
 
